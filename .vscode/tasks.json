@@ -1,0 +1,14 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [{
+    "label": "syncAll",
+    "type": "shell",
+    "command": "git add .;git commit -m 'Animation';git pull origin master;git push origin master;",
+    "isBackground": true,
+    "presentation": {
+      "reveal": "never"
+    },
+  }]
+}

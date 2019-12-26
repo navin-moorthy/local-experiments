@@ -1,0 +1,59 @@
+body,
+html {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/mf.jpeg') center/cover scroll no-repeat;
+	display: grid;
+	place-items: center;
+}
+
+.stamp {
+	color: #555;
+	font-size: 4rem;
+	font-weight: 700;
+	font-family: Courier, monospace;
+	text-transform: uppercase;
+	border: 0.5rem groove #555;
+	border-radius: 1rem;
+	padding: 0.25rem 1rem;
+	-webkit-transform: rotate(12deg);
+	transform: rotate(12deg);
+	-webkit-mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png');
+	mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png');
+	-webkit-mask-size: 944px 604px;
+	mask-size: 944px 604px;
+	mix-blend-mode: multiply;
+}
+
+.is-nope {
+	color: #d23;
+	border: 0.5rem dashed #d23;
+	font-size: 3rem;
+	-webkit-transform: rotate(-15deg);
+	transform: rotate(-15deg);
+	-webkit-mask-position: 2rem 3rem;
+	mask-position: 2rem 3rem;
+}
+
+.is-approved {
+	color: #0a9928;
+	border: 0.5rem solid #0a9928;
+	font-size: 5rem;
+	border-radius: 0;
+	-webkit-transform: rotate(8deg);
+	transform: rotate(8deg);
+	-webkit-mask-position: 12rem 6rem;
+	mask-position: 12rem 6rem;
+}
+
+.is-draft {
+	color: #c4c4c4;
+	border: 1rem dotted #c4c4c4;
+	transform: rotate(-5deg);
+	font-size: 6rem;
+	font-family: 'Open sans', Helvetica, Arial, sans-serif;
+	border-radius: 0;
+	padding: 0.5rem;
+}
